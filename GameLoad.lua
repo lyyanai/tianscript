@@ -1,0 +1,44 @@
+local Games = {
+    [7265785337] = "穷小子打工记",
+    [1512676568] = "河北唐县",
+    [873703865] = "一路向西",
+    [7018190066] = "死铁轨",
+    [1275875292] = "提升模拟器",
+    [1526814825] = "战争大亨",
+    [1268927906] = "力量传奇",
+    [1119466531] = "极速传奇",
+    [3358419523] = "动物进化模拟器",
+    [2564505263] = "超级大力士模拟器",
+    [3085257211] = "彩虹朋友",
+    [73885730] = "监狱人生",
+    [1489026993] = "生存杀手",
+    [1840897362] = "火箭发射模拟器",
+    [93740418] = "极限捉迷藏",
+    [279565647] = "幸运方块",
+    [2157872230] = "感染的微笑",
+    [274816972] = "CarCrushers2",
+    [5677613211] = "吃掉世界",
+    [210851291] = "造船寻宝",
+    [2471084] = "伐木大亨",
+    [4367208330] = "压力",
+    [3717264063] = "Nico的下一个机器人",
+    [65241] = "自然灾害",
+    [2640407187] = "驾驶汽车印尼"
+}
+
+local cloneref = cloneref or function(a) return a end
+local CoreGui = cloneref(game:GetService("CoreGui"))
+
+if not ({...})[1] then
+    local name = Games[game.GameId]
+    if name then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/lyyanai/tianscript/refs/heads/main/Games/"..(name)..".lua"))()
+    else
+        local message = Instance.new("Message", CoreGui)
+        message.Text = "此游戏不受支持"
+        task.wait(2)
+        message:destroy()
+    end
+end
+
+return Games
