@@ -26,6 +26,7 @@ local Games = {
     [2640407187] = "驾驶汽车印尼",
     [7326934954] = "森林中的99夜",
     [2820580801] = "俄亥俄州",
+    [1782832995] = "通用时间"
 }
 
 local cloneref = cloneref or function(a) return a end
