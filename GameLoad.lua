@@ -29,7 +29,7 @@ local Games = {
     [1782832995] = "通用时间",
     [6331902150] = "被遗弃",
     [2440500124] = "Doors",
-    [66654315] = "破坏者谜团2"
+    [66654135] = "破坏者谜团2"
 }
 
 local cloneref = cloneref or function(a) return a end
