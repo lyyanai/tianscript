@@ -497,14 +497,5 @@ Connect = gethui().DescendantAdded:Connect(function(child)
         child.DescendantAdded:Connect(main)
     end
 end)
---[[
---esp
-workspace.CurrentRooms.DescendantAdded:Connect(function(v)
-    if v:IsA("TextLabel") then
-        if espname[v.Text] then
-            v.Text = espname[v.Text]
-        end
-    end
-end)]]
 task.wait()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DarkDoorsKing/Doors/main/Main"))()
