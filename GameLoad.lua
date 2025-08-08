@@ -34,7 +34,8 @@ local Games = {
     [7008097940] = "墨水游戏",
     [1494262959] = "犯罪",
     [994732206] = "BloxFruits",
-    [371263894] = "格林维尔"
+    [371263894] = "格林维尔",
+    [3808081382] = "最强战场"
 }
 
 local cloneref = cloneref or function(a) return a end
